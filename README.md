@@ -6,3 +6,5 @@ It uses a custom implementation of GetProcAddress to locate the AmsiOpenSession 
 
 # Usage
 This program requires two arguments. The first is the executable name itself, and the second is the PID of the current PowerShell session in which you will run the executable. Run $PID inside your current PowerShell session to retrieve the PID.
+
+![AMSI Bypass Screenshot](images/Screenshot.png)
