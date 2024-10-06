@@ -19,7 +19,7 @@ FARPROC GetProcAddressReplacement(IN HMODULE hModule, IN LPCSTR apiName) {
 
     PDWORD functionsAddress = (PDWORD)((BYTE*)hModule + pImgExportDir->AddressOfFunctions);
 
-    PWORD functionsOrdinals = (PDWORD)((BYTE*)hModule + pImgExportDir->AddressOfNameOrdinals);
+    PWORD functionsOrdinals = (PWORD)((BYTE*)hModule + pImgExportDir->AddressOfNameOrdinals);
 
     // Looping through all the function names to compare to the apiName
     for (DWORD i = 0; i < pImgExportDir->NumberOfNames; i++) {

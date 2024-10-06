@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
 
 	// Retreive a handle to amsi.dll
 	printf("(+) Getting address of \"amsi.dll\" in target process\n");
-	loadLibraryDll = LoadLibraryA(L"amsi.dll");
+	loadLibraryDll = LoadLibraryA("amsi.dll");
 	if (loadLibraryDll == NULL) {
 		printf("\t(-) Failed to get handle of \"amsi.dll\"\n");
 		CloseHandle(hProcess);
